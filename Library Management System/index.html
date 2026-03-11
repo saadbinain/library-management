@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LibraryMS — Dashboard</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ===== SIDEBAR ===== -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-brand">
+      <div class="brand-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V2H6.5A2.5 2.5 0 0 0 4 4.5v15zm2.5-5a.5.5 0 0 0 0 1H20v1H6.5A1.5 1.5 0 0 1 5 15V4.5A1.5 1.5 0 0 1 6.5 3H19v13H6.5z"/>
+        </svg>
+      </div>
+      <div class="brand-text">
+        <div class="brand-title">LibraryMS</div>
+        <div class="brand-sub">Management System</div>
+      </div>
+    </div>
+
+    <div class="sidebar-section">
+      <div class="sidebar-section-label">Main Menu</div>
+      <nav class="sidebar-nav">
+        <div class="nav-item">
+          <a href="index.html" class="nav-link active">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+            Dashboard
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="view_books.html" class="nav-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            Book Catalog
+            <span class="nav-badge">3,842</span>
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="add_book.html" class="nav-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            Add New Book
+          </a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="sidebar-section">
+      <div class="sidebar-section-label">Library</div>
+      <nav class="sidebar-nav">
+        <div class="nav-item">
+          <a href="#" class="nav-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            Members
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#" class="nav-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="21 8 21 21 3 21 3 8"/><rect x="1" y="3" width="22" height="5"/><line x1="10" y1="12" x2="14" y2="12"/></svg>
+            Borrowing
+            <span class="nav-badge" style="background:var(--danger);color:#fff;">57</span>
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#" class="nav-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            Returns
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#" class="nav-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            Reports
+          </a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="sidebar-section">
+      <div class="sidebar-section-label">System</div>
+      <nav class="sidebar-nav">
+        <div class="nav-item">
+          <a href="#" class="nav-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/></svg>
+            Settings
+          </a>
+        </div>
+        <div class="nav-item">
+          <a href="#" class="nav-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+            Logout
+          </a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="sidebar-footer">
+      <div class="sidebar-user">
+        <div class="avatar">LA</div>
+        <div class="user-info">
+          <div class="user-name">Librarian Admin</div>
+          <div class="user-role">Head Librarian</div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== MAIN WRAPPER ===== -->
+  <div class="main-wrapper">
+
+    <!-- Topbar -->
+    <header class="topbar">
+      <button class="topbar-icon-btn" id="sidebarToggle" onclick="toggleSidebar()" title="Toggle Sidebar">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <div class="topbar-title">
+        <h1>Dashboard</h1>
+        <div class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="sep">›</span>
+          <span>Dashboard</span>
+        </div>
+      </div>
+      <div class="topbar-actions">
+        <div class="topbar-search">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" placeholder="Search books, members…" id="globalSearch" />
+        </div>
+        <button class="topbar-icon-btn" title="Notifications">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+          <span class="notif-dot"></span>
+        </button>
+        <button class="topbar-icon-btn" title="Calendar">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        </button>
+        <div style="width:1px;height:28px;background:var(--border-light);margin:0 4px;"></div>
+        <div style="display:flex;align-items:center;gap:8px;cursor:pointer;padding:4px 8px;border-radius:8px;transition:var(--transition);"
+             onmouseover="this.style.background='var(--bg)'" onmouseout="this.style.background='transparent'">
+          <div style="width:34px;height:34px;border-radius:50%;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.82rem;font-family:'Playfair Display',serif;">LA</div>
+          <div style="line-height:1.2;">
+            <div style="font-size:0.82rem;font-weight:600;color:var(--text);">Librarian Admin</div>
+            <div style="font-size:0.7rem;color:var(--text-muted);">Head Librarian</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Page Content -->
+    <main class="page-content">
+
+      <!-- Page Header -->
+      <div class="page-header">
+        <div>
+          <h2>Dashboard Overview</h2>
+          <p>Welcome back, Librarian. Here's what's happening in the library today.</p>
+        </div>
+        <div class="flex gap-8">
+          <a href="add_book.html" class="btn btn-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            Add New Book
+          </a>
+          <button class="btn btn-outline">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Export Report
+          </button>
+        </div>
+      </div>
+
+      <!-- Stat Cards -->
+      <div class="stats-grid">
+        <div class="stat-card green">
+          <div class="stat-icon green">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          </div>
+          <div class="stat-info">
+            <div class="stat-value" data-count="3842">0</div>
+            <div class="stat-label">Total Books</div>
+            <div class="stat-change up">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="18 15 12 9 6 15"/></svg>
+              +48 this month
+            </div>
+          </div>
+        </div>
+        <div class="stat-card gold">
+          <div class="stat-icon gold">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <div class="stat-info">
+            <div class="stat-value" data-count="1209">0</div>
+            <div class="stat-label">Registered Members</div>
+            <div class="stat-change up">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="18 15 12 9 6 15"/></svg>
+              +17 this month
+            </div>
+          </div>
+        </div>
+        <div class="stat-card red">
+          <div class="stat-icon red">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div class="stat-info">
+            <div class="stat-value" data-count="57">0</div>
+            <div class="stat-label">Overdue Books</div>
+            <div class="stat-change down">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="6 9 12 15 18 9"/></svg>
+              +8 since last week
+            </div>
+          </div>
+        </div>
+        <div class="stat-card blue">
+          <div class="stat-icon blue">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <div class="stat-info">
+            <div class="stat-value" data-count="284">0</div>
+            <div class="stat-label">Active Borrows</div>
+            <div class="stat-change up">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="18 15 12 9 6 15"/></svg>
+              +23 this week
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Two Column Row -->
+      <div class="grid-2" style="align-items:start;">
+
+        <!-- Recent Books -->
+        <div class="section-card">
+          <div class="section-header">
+            <div class="section-header-left">
+              <div class="section-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+              </div>
+              <div>
+                <div class="section-title">Recently Added Books</div>
+                <div class="section-subtitle">Last 5 entries</div>
+              </div>
+            </div>
+            <a href="view_books.html" class="btn btn-outline btn-sm">View All</a>
+          </div>
+          <div class="section-body" style="padding:0;">
+            <table class="lib-table">
+              <thead>
+                <tr>
+                  <th>Book</th>
+                  <th>Genre</th>
+                  <th>Status</th>
+                  <th>Added</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="book-cell">
+                      <div class="book-cover-placeholder" style="background:#3a6b4c;">GG</div>
+                      <div class="book-meta">
+                        <div class="title">The Great Gatsby</div>
+                        <div class="isbn">F. Scott Fitzgerald</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td><span class="tag">Fiction</span></td>
+                  <td><span class="badge badge-available">Available</span></td>
+                  <td class="text-sm text-muted">Mar 10, 2026</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="book-cell">
+                      <div class="book-cover-placeholder" style="background:#6b3a3a;">TK</div>
+                      <div class="book-meta">
+                        <div class="title">To Kill a Mockingbird</div>
+                        <div class="isbn">Harper Lee</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td><span class="tag">Classic</span></td>
+                  <td><span class="badge badge-borrowed">Borrowed</span></td>
+                  <td class="text-sm text-muted">Mar 9, 2026</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="book-cell">
+                      <div class="book-cover-placeholder" style="background:#2e4e7a;">DU</div>
+                      <div class="book-meta">
+                        <div class="title">Dune</div>
+                        <div class="isbn">Frank Herbert</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td><span class="tag">Sci-Fi</span></td>
+                  <td><span class="badge badge-available">Available</span></td>
+                  <td class="text-sm text-muted">Mar 8, 2026</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="book-cell">
+                      <div class="book-cover-placeholder" style="background:#7a5e2a;">RD</div>
+                      <div class="book-meta">
+                        <div class="title">Rich Dad Poor Dad</div>
+                        <div class="isbn">Robert Kiyosaki</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td><span class="tag">Finance</span></td>
+                  <td><span class="badge badge-reserved">Reserved</span></td>
+                  <td class="text-sm text-muted">Mar 7, 2026</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="book-cell">
+                      <div class="book-cover-placeholder" style="background:#4a2e6b;">19</div>
+                      <div class="book-meta">
+                        <div class="title">1984</div>
+                        <div class="isbn">George Orwell</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td><span class="tag">Dystopian</span></td>
+                  <td><span class="badge badge-available">Available</span></td>
+                  <td class="text-sm text-muted">Mar 6, 2026</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="flex flex-col gap-20">
+
+          <!-- Quick Stats -->
+          <div class="section-card">
+            <div class="section-header">
+              <div class="section-header-left">
+                <div class="section-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                </div>
+                <div class="section-title">Library at a Glance</div>
+              </div>
+            </div>
+            <div class="quick-stats">
+              <div class="quick-stat"><div class="q-val">24</div><div class="q-lbl">Categories</div></div>
+              <div class="quick-stat"><div class="q-val">6</div><div class="q-lbl">New Today</div></div>
+              <div class="quick-stat"><div class="q-val">12</div><div class="q-lbl">Returns Due</div></div>
+              <div class="quick-stat"><div class="q-val">98%</div><div class="q-lbl">Accuracy</div></div>
+            </div>
+          </div>
+
+          <!-- Recent Activity -->
+          <div class="section-card">
+            <div class="section-header">
+              <div class="section-header-left">
+                <div class="section-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                </div>
+                <div>
+                  <div class="section-title">Recent Activity</div>
+                  <div class="section-subtitle">Library events log</div>
+                </div>
+              </div>
+            </div>
+            <div class="section-body">
+              <div class="activity-list">
+                <div class="activity-item">
+                  <div class="activity-dot" style="background:var(--success)"></div>
+                  <div class="activity-content">
+                    <div class="act-title">Book returned: <strong>Atomic Habits</strong></div>
+                    <div class="act-meta">Returned by Maria Santos · Member #1042</div>
+                  </div>
+                  <div class="activity-time">2m ago</div>
+                </div>
+                <div class="activity-item">
+                  <div class="activity-dot" style="background:var(--accent)"></div>
+                  <div class="activity-content">
+                    <div class="act-title">New book added: <strong>The Midnight Library</strong></div>
+                    <div class="act-meta">Added by Librarian Admin</div>
+                  </div>
+                  <div class="activity-time">15m ago</div>
+                </div>
+                <div class="activity-item">
+                  <div class="activity-dot" style="background:var(--info)"></div>
+                  <div class="activity-content">
+                    <div class="act-title">Book borrowed: <strong>Deep Work</strong></div>
+                    <div class="act-meta">Borrowed by Juan dela Cruz · Member #0891</div>
+                  </div>
+                  <div class="activity-time">1h ago</div>
+                </div>
+                <div class="activity-item">
+                  <div class="activity-dot" style="background:var(--danger)"></div>
+                  <div class="activity-content">
+                    <div class="act-title">Overdue notice sent: <strong>Sapiens</strong></div>
+                    <div class="act-meta">Sent to Ana Reyes · 3 days overdue</div>
+                  </div>
+                  <div class="activity-time">3h ago</div>
+                </div>
+                <div class="activity-item">
+                  <div class="activity-dot" style="background:var(--primary-light)"></div>
+                  <div class="activity-content">
+                    <div class="act-title">New member: <strong>Carlos Mendoza</strong></div>
+                    <div class="act-meta">Member #1210 · Student</div>
+                  </div>
+                  <div class="activity-time">5h ago</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Genre Distribution -->
+      <div class="section-card">
+        <div class="section-header">
+          <div class="section-header-left">
+            <div class="section-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            </div>
+            <div>
+              <div class="section-title">Collection by Genre</div>
+              <div class="section-subtitle">Distribution across all categories</div>
+            </div>
+          </div>
+        </div>
+        <div class="section-body">
+          <div class="genre-bars" id="genreBars"></div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Mobile Overlay -->
+  <div class="sidebar-overlay" id="sidebarOverlay" onclick="closeSidebar()"></div>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

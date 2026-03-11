@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LibraryMS — Book Catalog</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ===== SIDEBAR ===== -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-brand">
+      <div class="brand-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V2H6.5A2.5 2.5 0 0 0 4 4.5v15zm2.5-5a.5.5 0 0 0 0 1H20v1H6.5A1.5 1.5 0 0 1 5 15V4.5A1.5 1.5 0 0 1 6.5 3H19v13H6.5z"/>
+        </svg>
+      </div>
+      <div class="brand-text">
+        <div class="brand-title">LibraryMS</div>
+        <div class="brand-sub">Management System</div>
+      </div>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-label">Main Menu</div>
+      <nav class="sidebar-nav">
+        <div class="nav-item"><a href="index.html" class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>Dashboard</a></div>
+        <div class="nav-item"><a href="view_books.html" class="nav-link active"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>Book Catalog<span class="nav-badge">12</span></a></div>
+        <div class="nav-item"><a href="add_book.html" class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>Add New Book</a></div>
+      </nav>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-label">Library</div>
+      <nav class="sidebar-nav">
+        <div class="nav-item"><a href="#" class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>Members</a></div>
+        <div class="nav-item"><a href="#" class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="21 8 21 21 3 21 3 8"/><rect x="1" y="3" width="22" height="5"/><line x1="10" y1="12" x2="14" y2="12"/></svg>Borrowing<span class="nav-badge" style="background:var(--danger);color:#fff;">57</span></a></div>
+        <div class="nav-item"><a href="#" class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>Returns</a></div>
+        <div class="nav-item"><a href="#" class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Reports</a></div>
+      </nav>
+    </div>
+    <div class="sidebar-section">
+      <div class="sidebar-section-label">System</div>
+      <nav class="sidebar-nav">
+        <div class="nav-item"><a href="#" class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/></svg>Settings</a></div>
+        <div class="nav-item"><a href="#" class="nav-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>Logout</a></div>
+      </nav>
+    </div>
+    <div class="sidebar-footer">
+      <div class="sidebar-user">
+        <div class="avatar">LA</div>
+        <div class="user-info">
+          <div class="user-name">Librarian Admin</div>
+          <div class="user-role">Head Librarian</div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== MAIN WRAPPER ===== -->
+  <div class="main-wrapper">
+
+    <header class="topbar">
+      <button class="topbar-icon-btn" onclick="toggleSidebar()" title="Toggle Sidebar">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <div class="topbar-title">
+        <h1>Book Catalog</h1>
+        <div class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="sep">›</span>
+          <span>Book Catalog</span>
+        </div>
+      </div>
+      <div class="topbar-actions">
+        <div class="topbar-search">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" placeholder="Search books, members…" />
+        </div>
+        <button class="topbar-icon-btn" title="Notifications">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+          <span class="notif-dot"></span>
+        </button>
+        <div style="width:1px;height:28px;background:var(--border-light);margin:0 4px;"></div>
+        <div style="display:flex;align-items:center;gap:8px;cursor:pointer;padding:4px 8px;border-radius:8px;" onmouseover="this.style.background='var(--bg)'" onmouseout="this.style.background='transparent'">
+          <div style="width:34px;height:34px;border-radius:50%;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.82rem;font-family:'Playfair Display',serif;">LA</div>
+          <div style="line-height:1.2;">
+            <div style="font-size:0.82rem;font-weight:600;color:var(--text);">Librarian Admin</div>
+            <div style="font-size:0.7rem;color:var(--text-muted);">Head Librarian</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-content">
+
+      <!-- Page Header -->
+      <div class="page-header">
+        <div>
+          <h2>Book Catalog</h2>
+          <p>Browse and manage all books in the library collection.</p>
+        </div>
+        <div class="flex gap-8">
+          <a href="add_book.html" class="btn btn-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            Add New Book
+          </a>
+          <button class="btn btn-outline" onclick="exportTable()">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Export CSV
+          </button>
+          <button class="btn btn-outline" id="toggleView" onclick="toggleViewMode()" title="Toggle View">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+            Grid View
+          </button>
+        </div>
+      </div>
+
+      <!-- Summary Stats -->
+      <div class="quick-stats">
+        <div class="quick-stat"><div class="q-val" id="totalCount">12</div><div class="q-lbl">Total Books</div></div>
+        <div class="quick-stat"><div class="q-val" id="availCount">7</div><div class="q-lbl">Available</div></div>
+        <div class="quick-stat"><div class="q-val" id="borrowedCount">2</div><div class="q-lbl">Borrowed</div></div>
+        <div class="quick-stat"><div class="q-val" id="reservedCount">1</div><div class="q-lbl">Reserved</div></div>
+        <div class="quick-stat"><div class="q-val" id="lostCount">1</div><div class="q-lbl">Lost</div></div>
+        <div class="quick-stat"><div class="q-val" id="copiesCount">46</div><div class="q-lbl">Total Copies</div></div>
+      </div>
+
+      <!-- Books Table Card -->
+      <div class="section-card">
+
+        <!-- Toolbar -->
+        <div class="section-header">
+          <div class="table-toolbar" style="width:100%;">
+            <div class="filter-tabs">
+              <button class="filter-tab active" onclick="filterBooks('all', this)">All</button>
+              <button class="filter-tab" onclick="filterBooks('available', this)">Available</button>
+              <button class="filter-tab" onclick="filterBooks('borrowed', this)">Borrowed</button>
+              <button class="filter-tab" onclick="filterBooks('reserved', this)">Reserved</button>
+              <button class="filter-tab" onclick="filterBooks('lost', this)">Lost</button>
+            </div>
+            <div class="table-search">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              <input type="text" id="tableSearch" placeholder="Search title, author, ISBN…" oninput="searchBooks(this.value)" />
+            </div>
+            <select class="table-filter-select" onchange="filterGenre(this.value)" id="genreFilter">
+              <option value="">All Genres</option>
+              <option>Classic</option><option>Fiction</option><option>Sci-Fi</option>
+              <option>Fantasy</option><option>Dystopian</option><option>Self-Help</option>
+              <option>Finance</option><option>History</option>
+            </select>
+            <select class="table-filter-select" onchange="sortBooks(this.value)" id="sortOrder">
+              <option value="title">Sort: Title (A–Z)</option>
+              <option value="title-desc">Sort: Title (Z–A)</option>
+              <option value="year">Sort: Oldest First</option>
+              <option value="year-desc">Sort: Newest First</option>
+              <option value="author">Sort: Author</option>
+            </select>
+            <div class="ml-auto" style="font-size:0.8rem;color:var(--text-muted);" id="resultCount">
+              Showing <strong>12</strong> books
+            </div>
+          </div>
+        </div>
+
+        <!-- Table View -->
+        <div id="tableView">
+          <div class="table-wrapper">
+            <table class="lib-table" id="booksTable">
+              <thead>
+                <tr>
+                  <th style="width:40px;"><input type="checkbox" id="selectAll" onchange="toggleSelectAll(this)" style="cursor:pointer;width:15px;height:15px;" /></th>
+                  <th><button class="sort-btn" onclick="sortBooks('title')">Book <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button></th>
+                  <th><button class="sort-btn" onclick="sortBooks('author')">Author <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button></th>
+                  <th>Genre</th>
+                  <th><button class="sort-btn" onclick="sortBooks('year')">Year <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button></th>
+                  <th>Copies</th>
+                  <th>Status</th>
+                  <th style="text-align:center;">Actions</th>
+                </tr>
+              </thead>
+              <tbody id="booksBody">
+                <!-- Rows injected by JS -->
+              </tbody>
+            </table>
+          </div>
+          <div id="noResults" class="empty-state" style="display:none;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <h3>No books found</h3>
+            <p>Try adjusting your search terms or filters.</p>
+          </div>
+        </div>
+
+        <!-- Grid View -->
+        <div id="gridView" style="display:none;padding:24px;">
+          <div id="gridContainer" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:20px;"></div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination">
+          <div>Showing <strong>1–12</strong> of <strong>12</strong> books</div>
+          <div class="pagination-pages">
+            <button class="page-btn" disabled>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <button class="page-btn active">1</button>
+            <button class="page-btn" onclick="showToast('Page navigation coming soon','info')">2</button>
+            <button class="page-btn" onclick="showToast('Page navigation coming soon','info')">3</button>
+            <button class="page-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </main>
+  </div>
+
+  <!-- View Book Modal -->
+  <div class="modal-overlay" id="viewModal">
+    <div class="modal" style="max-width:600px;">
+      <div class="modal-header">
+        <div class="modal-title" id="modalBookTitle">Book Details</div>
+        <button class="modal-close" onclick="closeModal('viewModal')">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="flex gap-20" style="align-items:flex-start;">
+          <div id="modalBookCover" style="width:90px;height:120px;border-radius:8px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:1.5rem;font-weight:900;color:rgba(255,255,255,0.3);font-family:'Playfair Display',serif;"></div>
+          <div style="flex:1;" id="modalBookInfo"></div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-outline" onclick="closeModal('viewModal')">Close</button>
+        <a href="add_book.html" class="btn btn-primary">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+          Edit Book
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Delete Confirm Modal -->
+  <div class="modal-overlay" id="deleteModal">
+    <div class="modal" style="max-width:440px;">
+      <div class="modal-header">
+        <div class="modal-title">Delete Book</div>
+        <button class="modal-close" onclick="closeModal('deleteModal')">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="alert alert-danger" style="margin-bottom:16px;">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          <div>
+            <strong>This action cannot be undone!</strong>
+            You are about to permanently delete "<span id="deleteBookName" style="font-style:italic;"></span>" from the catalog.
+          </div>
+        </div>
+        <p style="font-size:0.87rem;color:var(--text-muted);">All associated records including borrowing history will be archived.</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-outline" onclick="closeModal('deleteModal')">Cancel</button>
+        <button class="btn btn-danger" onclick="deleteBook()">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14H6L5 6"/></svg>
+          Yes, Delete Book
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-container" id="toastContainer"></div>
+  <div class="sidebar-overlay" id="sidebarOverlay" onclick="closeSidebar()"></div>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
